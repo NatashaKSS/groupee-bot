@@ -1,0 +1,23 @@
+{
+  "name": "groupee-bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot that fixes group messes!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatashaKSS/groupee-bot.git"
+  },
+  "author": "Natasha Koh Sze Sze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatashaKSS/groupee-bot/issues"
+  },
+  "homepage": "https://github.com/NatashaKSS/groupee-bot#readme",
+  "dependencies": {
+    "messaging-api-telegram": "^0.7.5",
+    "serverless": "^1.29.2"
+  }
+}

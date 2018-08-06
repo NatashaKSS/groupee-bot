@@ -1,0 +1,19 @@
+service: groupee-bot-service
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: ap-southeast-1
+
+functions:
+  listen:
+    name: groupee-bot-listen
+    description: Listens to incoming messages from Telegram clients
+    handler: handler.listen
+    events:
+      - http:
+          path: /
+          method: get
+    memorySize: 256
+    timeout: 10
