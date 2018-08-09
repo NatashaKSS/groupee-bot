@@ -10,9 +10,9 @@
   },
   rules: {
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
-    'function-paren-newline': ['error', { 'minItems': 5 }],
     'no-use-before-define': ['error', { 'variables': false }],
     'global-require': 'off',
+    'function-paren-newline': 'off',
     'arrow-body-style': ['off', 'as-needed'],
   },
   globals: {

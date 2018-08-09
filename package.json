@@ -26,7 +26,8 @@
   "homepage": "https://github.com/NatashaKSS/groupee-bot#readme",
   "dependencies": {
     "messaging-api-telegram": "^0.7.5",
-    "serverless": "^1.29.2"
+    "serverless": "^1.29.2",
+    "winston": "^3.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
