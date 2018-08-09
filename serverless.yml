@@ -3,17 +3,23 @@ service: groupee-bot-service
 provider:
   name: aws
   runtime: nodejs8.10
-  stage: dev
+  stage: ${opt:stage, 'dev'}
   region: ap-southeast-1
+  environment:
+    TELEGRAM_TOKEN: ${file(./serverless.env.yml):${opt:stage, 'dev'}.TELEGRAM_TOKEN}
 
 functions:
-  listen:
-    name: groupee-bot-listen
-    description: Listens to incoming messages from Telegram clients
-    handler: handler.listen
+  serve:
+    handler: service.serve
+    name: groupee-bot-transceiver
+    description: Receives messages and replies to them from Telegram clients
     events:
       - http:
-          path: /
-          method: get
+          path: /webhook
+          method: post
+          cors: true
     memorySize: 256
     timeout: 10
+
+plugins:
+  - serverless-offline
