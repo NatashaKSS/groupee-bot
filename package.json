@@ -25,9 +25,18 @@
   },
   "homepage": "https://github.com/NatashaKSS/groupee-bot#readme",
   "dependencies": {
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
     "messaging-api-telegram": "^0.7.5",
     "serverless": "^1.29.2",
-    "winston": "^3.0.0"
+    "serverless-webpack": "^5.2.0",
+    "webpack": "^4.16.5",
+    "webpack-node-externals": "^1.7.2",
+    "winston": "^3.0.0",
+    "winston-cloudwatch": "^2.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
