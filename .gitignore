@@ -3,3 +3,6 @@ node_modules
 
 # Serverless directories
 .serverless
+
+# Environment variables
+serverless.env.yml
