@@ -16,6 +16,6 @@
     'arrow-body-style': ['off', 'as-needed'],
   },
   globals: {
-    'fetch': true
+    'logger': true
   }
 }
