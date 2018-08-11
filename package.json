@@ -8,10 +8,10 @@
   },
   "scripts": {
     "start": "npx ntl --descriptions",
-    "run-func-local": "serverless invoke local --function serve",
     "start-offline": "serverless offline start --stage dev",
-    "deploy-dev": "serverless deploy --stage dev",
+    "run-func-local": "serverless invoke local --function serve",
     "deploy-func-serve-dev": "serverless deploy function --function serve --stage dev",
+    "deploy-dev": "serverless deploy --stage dev",
     "deploy-prod": "serverless deploy --stage prod"
   },
   "repository": {

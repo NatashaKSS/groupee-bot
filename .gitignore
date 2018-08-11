@@ -6,3 +6,6 @@ node_modules
 
 # Environment variables
 serverless.env.yml
+
+# webpack build directory
+.webpack
