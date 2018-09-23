@@ -2,7 +2,7 @@ import isEmpty from 'lodash/fp/isEmpty';
 import { TelegramClient } from 'messaging-api-telegram';
 
 // Setup logs
-require('./src/configs/logConfig');
+require('./src/config/logConfig');
 
 module.exports.serve = async (event, context, callback) => {
   const client = TelegramClient.connect(process.env.TELEGRAM_TOKEN);
