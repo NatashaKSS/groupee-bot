@@ -1,21 +1,20 @@
 {
-  'extends': ['airbnb', 'plugin:jasmine/recommended'],
-  'parser': 'babel-eslint',
-  'plugins': ['jasmine'],
-  'ecmaFeatures': {
-    'classes': true,
+  "extends": ["airbnb", "plugin:jasmine/recommended"],
+  "parser": "babel-eslint",
+  "plugins": ["jasmine"],
+  "ecmaFeatures": {
+    "classes": true
   },
-  'env': {
-    'jasmine': true,
+  "env": {
+    "jasmine": true
   },
-  rules: {
-    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
-    'no-use-before-define': ['error', { 'variables': false }],
-    'global-require': 'off',
-    'function-paren-newline': 'off',
-    'arrow-body-style': ['off', 'as-needed'],
+  "rules": {
+    "function-paren-newline": ["error", { "minItems": 5 }],
+    "no-use-before-define": ["error", { "variables": false }],
+    "global-require": "off",
+    "arrow-body-style": ["off", "as-needed"]
   },
-  globals: {
-    'logger': true
+  "globals": {
+    "logger": true
   }
 }
